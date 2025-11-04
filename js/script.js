@@ -48,7 +48,7 @@ revealOnScroll();
 // ===============================
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -66,26 +66,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 const form = document.querySelector('form');
 if (form) {
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
-        
+
         const nombre = this.querySelector('input[placeholder="Tu Nombre"]').value;
         const email = this.querySelector('input[placeholder="Tu Email"]').value;
         const mensaje = this.querySelector('textarea').value;
-        
+
         // Simple validation
         if (nombre.trim() === '' || email.trim() === '' || mensaje.trim() === '') {
             alert('Por favor completa todos los campos');
             return;
         }
-        
+
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             alert('Por favor ingresa un email válido');
             return;
         }
-        
+
         // Success message
         alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
         this.reset();
@@ -101,16 +101,16 @@ const sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', () => {
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        
+
         if (scrollY >= (sectionTop - 200)) {
             current = section.getAttribute('id');
         }
     });
-    
+
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
@@ -135,7 +135,7 @@ if ('IntersectionObserver' in window) {
             }
         });
     });
-    
+
     images.forEach(img => {
         img.style.opacity = '0';
         img.style.transition = 'opacity 0.5s ease';
@@ -144,44 +144,44 @@ if ('IntersectionObserver' in window) {
 }
 
 // ===============================
-// CARD HOVER EFFECTS
-// ===============================
-
-const reviewCards = document.querySelectorAll('.review-card');
-const testimonialCards = document.querySelectorAll('.testimonial-card');
-const galleryItems = document.querySelectorAll('.gallery-item');
-
-[...reviewCards, ...testimonialCards, ...galleryItems].forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        this.style.animation = 'none';
-        setTimeout(() => {
-            this.style.animation = '';
-        }, 10);
-    });
-});
-
-// ===============================
 // CAROUSEL FUNCTIONALITY (Optional)
 // ===============================
 
 const reviewsScroll = document.querySelector('.reviews-scroll');
-let scrollPosition = 0;
 
-// Auto scroll feature (optional - commented out by default)
-/*
-const autoScroll = () => {
-    if (reviewsScroll) {
-        scrollPosition += 2;
-        reviewsScroll.scrollLeft = scrollPosition;
-        
-        if (scrollPosition > reviewsScroll.scrollWidth - reviewsScroll.clientWidth) {
-            scrollPosition = 0;
-        }
+// AUTO-SCROLL CAROUSEL
+if (reviewsScroll) {
+    const reviewCards = reviewsScroll.querySelectorAll('.review-card');
+    const cardCount = reviewCards.length;
+    const cardWidth = 350; // px (matches the flex: 0 0 350px in CSS)
+    const gap = 24; // px (matches the gap: 24px in CSS)
+
+    if (cardCount > 0) {
+        // Duplicate cards for infinite scroll effect
+        reviewCards.forEach(card => {
+            const clone = card.cloneNode(true);
+            reviewsScroll.appendChild(clone);
+        });
+
+        // Calculate total scroll distance and duration
+        const totalWidth = cardCount * (cardWidth + gap);
+        const scrollDuration = cardCount * 8; // 8 seconds per card
+
+        // Set CSS custom properties for animation
+        reviewsScroll.style.setProperty('--items-count', cardCount);
+        reviewsScroll.style.setProperty('--scroll-duration', `${scrollDuration}s`);
+
+        // Enable auto-scrolling
+        reviewsScroll.classList.add('auto-scrolling');
+
+        // Fix: Change from scrolling to translate-based animation
+        // Reset scroll behavior
+        reviewsScroll.style.scrollBehavior = 'auto';
+        reviewsScroll.scrollLeft = 0;
     }
-};
+}
 
-setInterval(autoScroll, 50);
-*/
+let scrollPosition = 0;
 
 // ===============================
 // KEYBOARD NAVIGATION
@@ -209,7 +209,7 @@ document.addEventListener('keydown', (e) => {
 
 window.addEventListener('load', () => {
     document.body.style.opacity = '1';
-    
+
     // Trigger animations for visible elements
     const elements = document.querySelectorAll('[class*="card"], [class*="item"]');
     elements.forEach((el, index) => {
@@ -235,12 +235,12 @@ window.addEventListener('load', () => {
 
 const animateCounters = () => {
     const counters = document.querySelectorAll('.counter');
-    
+
     counters.forEach(counter => {
         const target = parseInt(counter.getAttribute('data-target'));
         const increment = target / 100;
         let current = 0;
-        
+
         const updateCount = () => {
             current += increment;
             if (current < target) {
@@ -250,7 +250,7 @@ const animateCounters = () => {
                 counter.textContent = target;
             }
         };
-        
+
         updateCount();
     });
 };
@@ -337,7 +337,7 @@ const createThemeSwitcher = () => {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         transition: all 0.3s ease;
     `;
-    
+
     // Note: Uncomment to enable theme switcher
     // document.body.appendChild(button);
 };
