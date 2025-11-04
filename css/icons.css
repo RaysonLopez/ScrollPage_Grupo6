@@ -1,0 +1,80 @@
+/* Font Awesome 6.4.0 Icons */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2') format('woff2'),
+        url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff') format('woff');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff2') format('woff2'),
+        url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff') format('woff');
+    font-weight: 400;
+}
+
+.fa,
+.fas,
+.fab {
+    font-family: 'FontAwesome' !important;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fas::before {
+    font-family: 'FontAwesome';
+    font-weight: 900;
+}
+
+.fab::before {
+    font-family: 'FontAwesome';
+    font-weight: 400;
+}
+
+/* Star icon */
+.fa-star::before {
+    content: '\f005';
+}
+
+.fa-chevron-down::before {
+    content: '\f078';
+}
+
+.fa-image::before {
+    content: '\f03e';
+}
+
+.fa-quote-left::before {
+    content: '\f10d';
+}
+
+.fa-map-marker-alt::before {
+    content: '\f3c5';
+}
+
+.fa-phone::before {
+    content: '\f095';
+}
+
+.fa-envelope::before {
+    content: '\f0e0';
+}
+
+.fa-facebook::before {
+    content: '\f09a';
+}
+
+.fa-twitter::before {
+    content: '\f099';
+}
+
+.fa-instagram::before {
+    content: '\f16d';
+}
+
+.fa-youtube::before {
+    content: '\f167';
+}

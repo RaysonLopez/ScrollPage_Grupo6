@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peugeot - Scroll Review</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="img/peugeot_logo.svg" alt="Peugeot Logo" class="peugeot-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reseñas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center d-flex align-items-center">
+        <div class="container">
+            <img src="img/peugeot_logo.svg" alt="Peugeot Logo" class="hero-logo mb-4">
+            <h1 class="display-3 fw-bold mb-4">Peugeot</h1>
+            <p class="lead mb-4">Descubre lo que nuestros clientes opinan sobre los vehículos Peugeot</p>
+            <a href="#reviews" class="btn btn-secondary btn-lg">
+                <i class="fas fa-chevron-down me-2"></i>Ver Reseñas
+            </a>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">
+                <i class="fas fa-star me-2 text-gray-icon"></i>Reseñas de Clientes
+            </h2>
+
+            <div class="reviews-scroll">
+                <!-- Review Card 1 -->
+                <div class="review-card">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/persona1.avif" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">Carlos Martínez</h6>
+                                    <small class="text-muted">Modelo: Peugeot 308</small>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-2 fw-bold">5.0</span>
+                            </div>
+                            <p class="card-text">Excelente vehículo. El consumo de gasolina es muy eficiente y el
+                                confort en la conducción es increíble. Lo recomiendo totalmente.</p>
+                            <small class="text-muted">Hace 2 meses</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="review-card">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/persona2.jpg" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">María García</h6>
+                                    <small class="text-muted">Modelo: Peugeot 3008</small>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-2 fw-bold">5.0</span>
+                            </div>
+                            <p class="card-text">Perfecto para viajes en familia. El espacio interior es amplio y los
+                                asientos muy cómodos. El sistema de infoentretenimiento es fácil de usar.</p>
+                            <small class="text-muted">Hace 1 mes</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="review-card">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/persona3.avif" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">Sofía García</h6>
+                                    <small class="text-muted">Modelo: Peugeot 208</small>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-2 fw-bold">4.5</span>
+                            </div>
+                            <p class="card-text">Muy buen coche para la ciudad. Ágil, fácil de aparcar y el diseño es
+                                muy moderno. Excelente relación precio-calidad.</p>
+                            <small class="text-muted">Hace 3 semanas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 4 -->
+                <div class="review-card">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/persona4.jpg" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">Juan Perez</h6>
+                                    <small class="text-muted">Modelo: Peugeot 5008</small>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-2 fw-bold">5.0</span>
+                            </div>
+                            <p class="card-text">SUV excepcional con 7 plazas. La conducción es suave y estable, y el
+                                sistema de seguridad es muy completo. Totalmente satisfecha.</p>
+                            <small class="text-muted">Hace 1 semana</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 5 -->
+                <div class="review-card">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/persona5.jpg" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">Pedro Sánchez</h6>
+                                    <small class="text-muted">Modelo: Peugeot 2008</small>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-2 fw-bold">4.0</span>
+                            </div>
+                            <p class="card-text">Buen crossover urbano. El consumo es muy bajo y el maletero es
+                                versátil. Recomendado para quienes buscan practicidad.</p>
+                            <small class="text-muted">Hace 5 días</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 6 -->
+                <div class="review-card">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/persona6.jpg" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">Laura Fernández</h6>
+                                    <small class="text-muted">Modelo: Peugeot 508</small>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-2 fw-bold">5.0</span>
+                            </div>
+                            <p class="card-text">Berlina de lujo muy cómoda. El interior es elegante y los acabados de
+                                calidad. Perfecta para largos viajes y conducción relajada.</p>
+                            <small class="text-muted">Ayer</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">
+                <i class="fas fa-image me-2 text-gray-icon"></i>Galería de Vehículos
+            </h2>
+
+            <div class="row g-4">
+                <!-- Gallery Item 1 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="gallery-item position-relative overflow-hidden rounded">
+                        <img src="img/Peugeot_308.jpg" alt="Peugeot 308" class="img-fluid w-100">
+                        <div class="overlay">
+                            <h5>Peugeot 308</h5>
+                            <p>Compacto moderno</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="gallery-item position-relative overflow-hidden rounded">
+                        <img src="img/Peugeot_3008.avif" alt="Peugeot 3008" class="img-fluid w-100">
+                        <div class="overlay">
+                            <h5>Peugeot 3008</h5>
+                            <p>SUV Compacto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="gallery-item position-relative overflow-hidden rounded">
+                        <img src="img/Peugeot_208.avif" alt="Peugeot 208" class="img-fluid w-100">
+                        <div class="overlay">
+                            <h5>Peugeot 208</h5>
+                            <p>Urbano deportivo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="gallery-item position-relative overflow-hidden rounded">
+                        <img src="img/Peugeot_5008.jpg" alt="Peugeot 5008" class="img-fluid w-100">
+                        <div class="overlay">
+                            <h5>Peugeot 5008</h5>
+                            <p>SUV 7 plazas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="gallery-item position-relative overflow-hidden rounded">
+                        <img src="img/Peugeot_2008.jpg" alt="Peugeot 2008" class="img-fluid w-100">
+                        <div class="overlay">
+                            <h5>Peugeot 2008</h5>
+                            <p>Crossover urbano</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="gallery-item position-relative overflow-hidden rounded">
+                        <img src="img/Peugeot_508.jpg" alt="Peugeot 508" class="img-fluid w-100">
+                        <div class="overlay">
+                            <h5>Peugeot 508</h5>
+                            <p>Berlina de lujo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">
+                <i class="fas fa-quote-left me-2 text-gray-icon"></i>Lo que Dicen Nuestros Clientes
+            </h2>
+
+            <div class="row g-4">
+                <!-- Testimonio 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card card border-0 shadow-sm h-100">
+                        <div class="card-body position-relative">
+                            <div class="quote-icon mb-3">
+                                <i class="fas fa-quote-left icon-gray-medium"></i>
+                            </div>
+                            <p class="card-text mb-4">"La mejor decisión que pude haber tomado. Peugeot combina calidad,
+                                confort y tecnología de forma excepcional."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="img/empresario1.jpg" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <strong>Valentina Martínez</strong>
+                                    <br>
+                                    <small class="text-muted">Empresaria</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card card border-0 shadow-sm h-100">
+                        <div class="card-body position-relative">
+                            <div class="quote-icon mb-3">
+                                <i class="fas fa-quote-left icon-gray-medium"></i>
+                            </div>
+                            <p class="card-text mb-4">"Servicio excepcional y autos de calidad. El equipo de Peugeot
+                                siempre está disponible para ayudar."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="img/empresario2.jpg" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <strong>Mateo González</strong>
+                                    <br>
+                                    <small class="text-muted">Profesional independiente</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card card border-0 shadow-sm h-100">
+                        <div class="card-body position-relative">
+                            <div class="quote-icon mb-3">
+                                <i class="fas fa-quote-left icon-gray-medium"></i>
+                            </div>
+                            <p class="card-text mb-4">"Diseño elegante, alto rendimiento y precios competitivos.
+                                Totalmente recomendado para cualquier cliente."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="img/empresario3.jpg" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <strong>Camila Sánchez</strong>
+                                    <br>
+                                    <small class="text-muted">Transportista</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card card border-0 shadow-sm h-100">
+                        <div class="card-body position-relative">
+                            <div class="quote-icon mb-3">
+                                <i class="fas fa-quote-left icon-gray-medium"></i>
+                            </div>
+                            <p class="card-text mb-4">"Económico, seguro y ecológico. Peugeot es la marca que buscaba
+                                para el futuro."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="img/empresario4.jpg" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <strong>Santiago López</strong>
+                                    <br>
+                                    <small class="text-muted">Estudiante</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card card border-0 shadow-sm h-100">
+                        <div class="card-body position-relative">
+                            <div class="quote-icon mb-3">
+                                <i class="fas fa-quote-left icon-gray-medium"></i>
+                            </div>
+                            <p class="card-text mb-4">"El mejor servicio postventa que he experimentado. Mantenimiento
+                                garantizado y repuestos de calidad."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="img/empresario5.jpg" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <strong>Roberto Santos</strong>
+                                    <br>
+                                    <small class="text-muted">Ejecutivo</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card card border-0 shadow-sm h-100">
+                        <div class="card-body position-relative">
+                            <div class="quote-icon mb-3">
+                                <i class="fas fa-quote-left icon-gray-medium"></i>
+                            </div>
+                            <p class="card-text mb-4">"Confiable, moderno y con tecnología de punta. Peugeot es sinónimo
+                                de calidad para mí."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="img/empresario6.jpg" alt="Cliente" class="rounded-circle me-3">
+                                <div>
+                                    <strong>Alejandro Gómez</strong>
+                                    <br>
+                                    <small class="text-muted">Diseñadora</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Contacta con Nosotros</h2>
+
+            <div class="row g-4 mb-5">
+                <!-- Contact Info 1 -->
+                <div class="col-md-4 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-map-marker-alt fa-3x icon-gray-large"></i>
+                    </div>
+                    <h5>Dirección</h5>
+                    <p>Quito (Blue Box Isaac Albéniz)<br>Av. Galo Plaza Lasso N49-199 e Isaac Albéniz</p>
+                </div>
+
+                <!-- Contact Info 2 -->
+                <div class="col-md-4 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-phone fa-3x icon-gray-large"></i>
+                    </div>
+                    <h5>Teléfono</h5>
+                    <p>+593 96 403 0030<br></p>
+                </div>
+
+                <!-- Contact Info 3 -->
+                <div class="col-md-4 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-envelope fa-3x icon-gray-large"></i>
+                    </div>
+                    <h5>Email</h5>
+                    <p>www.peugeot-formularios.com.ec<br>www.peugeot.com.ec</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="Tu Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" placeholder="Tu Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control form-control-lg" rows="4" placeholder="Tu Mensaje"
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-secondary btn-lg px-5">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-4">
+        <div class="container">
+            <p class="mb-3">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+            </p>
+            <p>&copy; 2025 Peugeot. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
